@@ -1,0 +1,13 @@
+*.toc
+*.gz
+*.fdb*
+*.fls
+.vscode
+.cph
+*.log
+*.aux
+*.out
+*.code-snippets
+.clang-format
+main.f*
+main.s*
