@@ -405,4 +405,41 @@ Por lo tanto:
 12^{49} \nmid 100!
 \]
 
+
+\section{Producto de todos los divisores de un número}
+
+Sea $n$ un número entero positivo con descomposición en factores primos dada por:
+\[
+n = p_1^{a_1} \cdot p_2^{a_2} \cdot \dots \cdot p_k^{a_k}
+\]
+donde $p_i$ son números primos y $a_i$ sus exponentes.
+
+El número total de divisores de $n$ se denota por $\tau(n)$ y se calcula como:
+\[
+\tau(n) = (a_1 + 1)(a_2 + 1) \cdots (a_k + 1)
+\]
+
+Los divisores de $n$ pueden emparejarse en la forma $(d, \tfrac{n}{d})$, de modo que cada par tiene producto igual a $n$. 
+Por lo tanto, si existen $\tau(n)$ divisores, hay $\tfrac{\tau(n)}{2}$ pares, y el producto total de todos los divisores es:
+\[
+\boxed{\displaystyle \prod_{d \mid n} d = n^{\tau(n)/2}}
+\]
+
+Si $\tau(n)$ es impar, esto implica que $n$ es un cuadrado perfecto. En tal caso, existe un divisor central $d = \sqrt{n}$ 
+que se empareja consigo mismo, y la fórmula anterior sigue siendo válida.
+
+\subsection*{Ejemplo}
+Sea $n = 12 = 2^2 \cdot 3^1$. Entonces:
+\[
+\tau(12) = (2 + 1)(1 + 1) = 6
+\]
+\[
+\prod_{d \mid 12} d = 12^{6/2} = 12^3 = 1728
+\]
+Los divisores de $12$ son $1, 2, 3, 4, 6, 12$, y efectivamente:
+\[
+1 \cdot 2 \cdot 3 \cdot 4 \cdot 6 \cdot 12 = 1728
+\]
+
+
 \end{document}
