@@ -445,4 +445,11 @@ Los divisores de $12$ son $1, 2, 3, 4, 6, 12$, y efectivamente:
 \[
 \pi(n) \approx \frac{n}{\ln n} \left( 1 + \frac{1}{\ln n} \right)
 \]
+
+\section{Suma de LCMs}
+\[
+\sum_{k=1}^{n} \operatorname{lcm}(k,n)
+= \frac{n}{2}\left(1 + \sum_{d \mid n} d \,\varphi(d)\right)
+\]
+Donde $\varphi(d)$ es la función totiente de Euler.
 \end{document}
